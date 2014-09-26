@@ -4,11 +4,6 @@
 
 .brand .logo {
   float:left;
-  background-image:url(../images/logo.png);  
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 38px;
-  height: 38px;
   margin-left:5	px;
   margin-right:15px;
 }
@@ -21,8 +16,14 @@
   font-size: 70%;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
 	padding-top:70px;
+  margin-bottom: 40px;  
 }
 
 blockquote {
@@ -31,10 +32,14 @@ blockquote {
 
 /* bootstrap doesn't provide footers, so we make our own */
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+
   background-color: #f8f8f8;
   border-style: solid;
   border-color: #e7e7e7;
   border-width: 1px 0px 0px 0px;
   padding-top:10px;
-  margin-top:10px;
 }
