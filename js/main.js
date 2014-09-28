@@ -11,9 +11,14 @@ adjustHeader = function () {
 window.onscroll = adjustHeader
 adjustHeader()
 
-scrollToTop = function() {
+scrollToHeading = function(id) {
+  var height = parseInt($('#header').css('min-height'), 10)
+  scrollTo($('#'+id).offset().top - height - 10);
+}
+
+scrollTo = function(pos) {
   $('html, body').animate({
-    scrollTop: 0
+    scrollTop: pos
   }, 200); 
 }
 

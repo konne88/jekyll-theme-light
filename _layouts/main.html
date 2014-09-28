@@ -28,7 +28,7 @@
       <div class="container"><div class="row">
         <div class="navbar-header col-xs-10 col-sm-8">
           <div class="brand navbar-brand">
-            <a href="javascript:scrollToTop();"><img class="logo" src="{{ site.logourl }}"></img></a>
+            <a href="javascript:scrollTo(0);"><img class="logo" src="{{ site.logourl }}"></img></a>
             <div class="info">
               <div class="title">{{ page.title }}</div>
               <div id="description" class="description">{{ page.description }}</div>
@@ -50,10 +50,11 @@
           <ul class="nav navbar-nav navbar-right">
     <!--        <li><a href="{{ site.repositoryurl }}">
               <i class="icon-github icon-large"></i> GitHub</a>
-            </li>  -->
-            <li class="active"><a href="#">Publications</a></li>
-            <li><a href="#about">Projects</a></li>
-            <li><a href="#contact">Posts</a></li>
+            </li> 
+            <li class="active"><a href="#">Publications</a></li>  -->
+            <li><a href="javascript:scrollToHeading('projects')">Projects</a></li>
+            <li><a href="javascript:scrollToHeading('publications')">Publications</a></li>
+            <li><a href="javascript:scrollToHeading('posts')">Posts</a></li>
           </ul>
         </div>
       </div></div>
