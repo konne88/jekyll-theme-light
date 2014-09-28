@@ -1,11 +1,20 @@
+var headstart = 200;
+var speed = 4;
+
 $('table').addClass('table well');
 
 var height = parseInt($('#header').css('height'), 10)
 $('body').css('padding-top', height);
 
 adjustHeader = function () {
-  var h = height - document.body.scrollTop;
+  var scroll = document.body.scrollTop;
+  var h = height - scroll;
   $('#header').css('height', h);
+
+  $('.moving-image').each(function() {
+  	var pos = $(this).offset().top;
+    $(this).children('.bg').css('top', Math.max(0, (pos-(scroll+headstart)) / speed));
+  });
 }
 
 window.onscroll = adjustHeader

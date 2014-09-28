@@ -50,6 +50,7 @@
 
 .brand .title {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .brand .description {
@@ -102,4 +103,17 @@ blockquote {
   border-color: #e7e7e7;
   border-width: 1px 0px 0px 0px;
   padding-top:10px;
+}
+
+.moving-image {
+  float:left;
+  position: relative;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+.moving-image .bg {
+  position: absolute;
+  top:0px;
+  z-index: -1;
 }
