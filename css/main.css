@@ -1,19 +1,63 @@
-.navbar .brand {
-  margin-top:-8px;
+.navbar {
+  overflow: hidden;
 }
 
-.brand .logo {
-  float:left;
-  margin-left:5	px;
-  margin-right:15px;
+.navbar .container {
+  overflow: hidden;
+  height:100%;
+}
+
+.navbar-header {
+  overflow: hidden;
+  height:100%;
+}
+
+.brand {
+  overflow: hidden;
+  height:100%;
+}
+
+.brand #logo {
+  min-height: 50px;
+  float: left;
+  margin-left: 5px;
+  margin-right: 15px;
+  padding-bottom: 14px;
+  margin-top: -8px;
 }
 
 .brand .name {
-  float:left;
+  overflow: hidden;
+  max-width: 400px;
+  height:100%;
+  position: relative;
+}
+
+.brand .title {
+  margin-bottom: 10px;
 }
 
 .brand .description {
-  font-size: 70%;
+  font-size: 80%;
+  position: relative;
+  height:100%;
+}
+
+.brand .name:after {
+  position: absolute;
+  left:0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to top,
+     rgba(248,248,248, 1) 0%, 
+     rgba(248,248,248, 0) 20%, 
+     rgba(248,248,248, 0) 100%
+/*   rgba(248,248,248, 1) 20%, 
+     rgba(248,248,248, 0) 60%   */
+  );
+  pointer-events: none; /* so the text is still selectable */
 }
 
 html {
