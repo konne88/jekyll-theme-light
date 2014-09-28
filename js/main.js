@@ -10,3 +10,13 @@ adjustHeader = function () {
 
 window.onscroll = adjustHeader
 adjustHeader()
+
+scrollToTop = function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 200); 
+}
+
+download = function(url) {
+  window.location = url;
+}

@@ -27,13 +27,13 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="header">
       <div class="container"><div class="row">
         <div class="navbar-header col-xs-10 col-sm-8">
-          <div class="brand navbar-brand"> <!-- href="{{ site.baseurl }}/"> -->
-            <img class="logo" src="{{ site.logourl }}"></img>
+          <div class="brand navbar-brand">
+            <a href="javascript:scrollToTop();"><img class="logo" src="{{ site.logourl }}"></img></a>
             <div class="info">
               <div class="title">{{ page.title }}</div>
               <div id="description" class="description">{{ page.description }}</div>
                 <div class="buttons test-center">
-                  <button type="button" class="btn btn-default">Download CV</button>
+                  <button type="button" class="btn btn-default" onclick="download('{{ page.cvurl }}')">Download Resume</button>
                 </div>
             </div>
           </div>
