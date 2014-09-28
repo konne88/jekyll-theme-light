@@ -6,7 +6,7 @@ var height = 250;
 adjustHeader = function () {
   var h = height- document.body.scrollTop;
   $('#header').css('height', h);
-  $('#logo').css('height', h);
+//  $('#logo').css('height', h);
 
 //  var w = $(window).width() - width;
 //  $('#name').css('width', w);
@@ -14,7 +14,7 @@ adjustHeader = function () {
 
 
 window.onscroll = adjustHeader
-window.onresize = adjustHeader
+// window.onresize = adjustHeader
 adjustHeader()
 
 $('body').css('padding-top', height);
