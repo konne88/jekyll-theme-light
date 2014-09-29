@@ -1,5 +1,5 @@
 #header {
-  height: 250px;  
+  height:260px;
 }
 
 .navbar .container {
@@ -13,20 +13,6 @@
 .navbar-header {
   overflow: hidden;
   height:100%;
-}
-
-@media (max-width: 768px) {
-  .navbar-collapse {
-    float: left;
-    background-color: #f8f8f8;
-    width: 100%;
-    border-style: solid;
-    border-color: #e7e7e7;
-    border-width-bottom: 1px;
-  }
-  .brand .logo {
-    max-height:150px;
-  }
 }
 
 .brand {
@@ -119,4 +105,33 @@ blockquote {
   position: absolute;
   top:0px;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    float: left;
+    background-color: #f8f8f8;
+    width: 100%;
+    border-style: solid;
+    border-color: #e7e7e7;
+    border-width-bottom: 1px;
+  }
+  .brand .logo {
+  	margin-left:-15px;
+    max-height:150px;
+  }
+}
+
+@media (max-width: 512px) {
+  .brand .logo {
+    max-height:90px;
+  }
+
+  .navbar-header {
+  	padding-right: 0px;
+  }
+
+  .navbar-brand {
+  	padding-right: 0px;
+  }
 }
