@@ -35,24 +35,26 @@
           </div>
         </div>
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+        {% if page.topnav %}
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            {% for entry in page.topnav %}
-              <li><a href="{{ entry.url }}">{{ entry.text }}</a></li>
-            {% endfor %}
-    <!--        <li><a href="{{ site.repositoryurl }}">
-              <i class="icon-github icon-large"></i> GitHub</a>
-            </li> 
-            <li class="active"><a href="#">Publications</a></li>  -->
-          </ul>
-        </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              {% for entry in page.topnav %}
+                <li><a href="{{ entry.url }}" onclick="collapseNavbar()" class="navlnk">{{ entry.text }}</a></li>
+              {% endfor %}
+      <!--        <li><a href="{{ site.repositoryurl }}">
+                <i class="icon-github icon-large"></i> GitHub</a>
+              </li> 
+              <li class="active"><a href="#">Publications</a></li>  -->
+            </ul>
+          </div>
+        {% endif %}
       </div></div>
     </nav>
 
@@ -60,9 +62,14 @@
         {{ content }}
   	</div>
 
+    <br/>
+
     <footer class="footer">
       <div class="container">
-        <p>Developed by <a href="http://konne.me">Konstantin Weitz</a></p>
+        <p>
+          Developed by <a href="http://konne.me">Konstantin Weitz</a>,
+          view source on <a href="{{ site.repositoryurl }}"><i class="icon-github icon-large"></i> GitHub</a>.
+        </p>
       </div>
     </footer>
 

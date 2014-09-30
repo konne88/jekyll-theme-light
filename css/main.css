@@ -103,9 +103,10 @@ blockquote {
   z-index: -1;
 }
 
-.readmore {
-  display: block;
-  margin-top: -9px;
+.posts h2 {
+  /* make h2 a h3 heading*/
+  font-size: 24px;
+  
 }
 
 @media (max-width: 768px) {

@@ -6,7 +6,7 @@ $('table').addClass('table well');
 var height = parseInt($('#header').css('height'), 10)
 $('body').css('padding-top', height);
 
-adjustHeader = function () {
+adjustHeader = function() {
   var scroll = document.body.scrollTop;
   var h = height - scroll;
   $('#header').css('height', h);
@@ -19,6 +19,12 @@ adjustHeader = function () {
 
 window.onscroll = adjustHeader
 adjustHeader()
+
+collapseNavbar = function() {
+  if (parseInt($(window).width(), 10) <= 768) {
+    $('.navbar-collapse').collapse('hide');
+  } 
+}
 
 scrollToHeading = function(id) {
   var height = parseInt($('#header').css('min-height'), 10)
