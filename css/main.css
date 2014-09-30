@@ -1,7 +1,3 @@
-#header {
-  height:260px;
-}
-
 .navbar .container {
   height:100%;
 }
@@ -105,6 +101,11 @@ blockquote {
   position: absolute;
   top:0px;
   z-index: -1;
+}
+
+.readmore {
+  display: block;
+  margin-top: -9px;
 }
 
 @media (max-width: 768px) {
