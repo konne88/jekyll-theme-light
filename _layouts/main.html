@@ -23,7 +23,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="header" style="{{ page.header_style }}"> <!-- height:{{ page.height }};"> -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="header" style="{{ page.header_style }}">
       <div class="container"><div class="row">
         <div class="navbar-header col-xs-10 col-sm-8">
           <div class="brand navbar-brand">
@@ -48,10 +48,6 @@
               {% for entry in page.topnav %}
                 <li><a href="{{ entry.url }}" onclick="collapseNavbar()" class="navlnk">{{ entry.text }}</a></li>
               {% endfor %}
-      <!--        <li><a href="{{ site.repositoryurl }}">
-                <i class="icon-github icon-large"></i> GitHub</a>
-              </li> 
-              <li class="active"><a href="#">Publications</a></li>  -->
             </ul>
           </div>
         {% endif %}
