@@ -7,7 +7,7 @@ var height = parseInt($('#header').css('height'), 10)
 $('body').css('padding-top', height);
 
 adjustHeader = function() {
-  var scroll = document.body.scrollTop;
+  var scroll = $(window).scrollTop();
   var h = height - scroll;
   $('#header').css('height', h);
 
