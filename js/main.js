@@ -13,7 +13,7 @@ adjustHeader = function() {
 
   $('.moving-image').each(function() {
   	var pos = $(this).offset().top;
-    $(this).children('.bg').css('top', Math.max(0, (pos-(scroll+headstart)) / speed));
+    $(this).children('.moving').css('top', Math.max(0, (pos-(scroll+headstart)) / speed));
   });
 }
 
