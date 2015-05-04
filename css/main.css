@@ -120,6 +120,7 @@ blockquote {
 .person {
   float: left; 
   margin: 10px;
+  text-align: center;
 }
 
 .person .name {
@@ -128,8 +129,7 @@ blockquote {
 
 .person .profile {
   height: 150px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5px;
 } 
 
 @media (max-width: 768px) {
