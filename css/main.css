@@ -117,6 +117,21 @@ blockquote {
   
 }
 
+.person {
+  float: left; 
+  margin: 10px;
+  text-align: center;
+}
+
+.person .name {
+  color: black;
+}
+
+.person .profile {
+  height: 150px;
+  margin: 5px;
+} 
+
 @media (max-width: 768px) {
   .navbar-collapse {
     float: left;
