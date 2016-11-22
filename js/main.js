@@ -1,4 +1,4 @@
-var headstart = 200;
+var headstart = 400;
 var speed = 5;
 
 $('table').addClass('table well');
